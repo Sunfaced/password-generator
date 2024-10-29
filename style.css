@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.container {
+  text-align: center;
+  width: 1200px;
+  background-color: rgb(240, 233, 233);
+  border-radius: 8px;
+  box-shadow: 10px 10px 70px 10px;
+}
+
+h1 {
+  margin: 10px;
+  font-weight: 900;
+  color: blue;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-bottom: 1px dashed black;
+}
+
+.wrapper {
+  margin: 1.5rem;
+}
+
+.input-box {
+  position: relative;
+}
+
+.pass-input {
+  text-align: center;
+  width: 50%;
+  height: 60px;
+  color: #000;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 0 2.5rem 0 1rem;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 300px;
+  bottom: 15px;
+  cursor: pointer;
+  line-height: 55px;
+  color: rgb(0, 0, 0);
+  /* font-size: 30px; */
+}
+
+.material-symbols-outlined:hover {
+  color: blue;
+}
+
+.pass-box {
+  margin: 1.5rem 0;
+}
+
+.pass-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.pass-length {
+  width: 50%;
+  height: 10px;
+}
+
+.options {
+  display: flex;
+  list-style-type: none;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+
+.option {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.option > input {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.genreate-pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.generate-pass__btn {
+  width: 70%;
+  height: 40px;
+  font-size: 1.5rem;
+  border: 1px dashed black;
+  border-radius: 5px;
+  background-color: rgb(240, 233, 233);
+}
+
+.generate-pass__btn:hover {
+  background-color: blue;
+  transition: 0.7s all;
+}
