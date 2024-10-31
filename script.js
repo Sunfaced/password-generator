@@ -22,10 +22,11 @@ const passLength = document.querySelector(".pass-length"); //Инпут с бе�
 const passValue = document.querySelector(".pass-value"); //Спан, содержащий длину пароля
 const passInput = document.querySelector(".pass-input"); //Инпут для вывода пароля
 const genPassBtn = document.querySelector(".generate-pass__btn"); //Кнопка для генерации пароля
+const copyPass = document.querySelector("#copyPass");
 
 genPassBtn.addEventListener("click", generatePass);
 passLength.addEventListener("input", redrawSpanValue);
-
+copyPass.addEventListener("click", copyPassword);
 function redrawSpanValue() {
   passValue.textContent = +passLength.value;
 }
@@ -51,3 +52,15 @@ function generatePass() {
   passInput.value = randomPass;
 }
 if ((passInput.value = "")) generatePass();
+
+function copyPassword() {
+  navigator.clipboard.writeText(passInput.value);
+  if (passInput.value === "") {
+    // copyPass.textContent = "save";
+  } else {
+    copyPass.textContent = "check_box";
+    setTimeout(() => {
+      copyPass.textContent = "save";
+    }, 1000);
+  }
+}

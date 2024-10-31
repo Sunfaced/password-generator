@@ -54,17 +54,17 @@ p {
   padding: 0 2.5rem 0 1rem;
 }
 
-.material-symbols-outlined {
+.material-symbols-rounded {
   position: absolute;
   right: 300px;
-  bottom: 15px;
+  /* bottom: 25px; */
   cursor: pointer;
   line-height: 55px;
   color: rgb(0, 0, 0);
-  /* font-size: 30px; */
+  font-size: 40px;
 }
 
-.material-symbols-outlined:hover {
+.material-symbols-rounded:hover {
   color: blue;
 }
 
